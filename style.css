@@ -1,0 +1,138 @@
+body {
+  margin: 0;
+  display: flex;
+}
+
+@font-face {
+  font-family: "CursedTimer.ttf";
+  src: url("CursedTimer.ttf");
+}
+
+.mainBody {
+  display: flex;
+  flex-direction: row;
+  gap: 90px;
+}
+
+.container {
+  box-shadow: 0px 0px 30px rgba(140, 14, 14, 0.535);
+  background-color: #151c37;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 10% auto;
+  border-radius: 10px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: white;
+  padding: 35px 110px;
+  border: 12px solid rgba(175, 6, 6, 0.589);
+}
+
+.homeGuest > h3 {
+  margin: 10px 0 20px 0;
+  text-align: center;
+  font-size: 35px;
+  font-style: bold;
+}
+
+.increments {
+  display: flex;
+  justify-content: center;
+  gap: 7px;
+}
+
+.oneTwoThreeBtn,
+#reset {
+  border: 1px solid #9aabd8;
+  font-size: 18px;
+  padding: 6px 6px 4px 4px;
+  margin: 15px 0 0 0;
+  border-radius: 3px;
+  color: #9aabd8;
+  font-family: "CursedTimer.ttf";
+  background-color: transparent;
+  cursor: pointer;
+}
+
+#reset {
+  margin: 30px 0 0 0;
+  padding: 10px 15px 8px 15px;
+  border-radius: 4px;
+  font-size: 25px;
+}
+
+.oneTwoThreeBtn:hover,
+#reset:hover,
+.foulUpDown > button:hover {
+  background-color: #9aabd822;
+  transition: all 0.3s ease;
+}
+
+#reset:hover {
+  color: #f94f6d;
+}
+
+.score {
+  background-color: black;
+  font-size: 90px;
+  font-family: "CursedTimer.ttf";
+  color: #f94f6d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120px;
+  width: 155px;
+  margin: 0px;
+}
+
+.score > h4 {
+  padding-top: 15px;
+}
+
+.fouls {
+  display: flex;
+  justify-content: center;
+}
+
+.foulUpDown {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.foulUpDown > button {
+  background-color: transparent;
+  border: 1px solid #9aabd8;
+  color: #9aabd8;
+  padding: 6px 8px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.foulNumContainer {
+  background-color: black;
+  color: #fec343;
+  font-family: "CursedTimer.ttf";
+  font-size: 45px;
+  text-align: center;
+  width: 80px;
+}
+
+.foulNumContainer > p {
+  padding: 13px 0px 3px 0px;
+  margin: 10px 20px 16px 20px;
+}
+
+.winner {
+  color: #50dc43;
+}
+
+.even {
+  color: #fec343;
+}
+
+h3.foul3 {
+  margin: 13px 0 0 0;
+  font-size: 24px;
+}

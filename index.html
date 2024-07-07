@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Scoreboard</title>
+  </head>
+  <body>
+    <div class="container">
+        <div class="mainBody">
+      <div class="homeGuest">
+        <h3>HOME</h3>
+        <div class="score">
+          <h4 id="homeNum">0</h4>
+        </div>
+        <div class="increments">
+          <button class="oneTwoThreeBtn" id="plusOneH">+1</button>
+          <button class="oneTwoThreeBtn" id="plusTwoH">+2</button>
+          <button class="oneTwoThreeBtn" id="plusThreeH">+3</button>
+        </div>
+        <h3 class="foul3">FOULS</h3>
+        <div class="fouls">
+            <div class="foulNum">
+                <div class="foulNumContainer"><p id="foulNumHome">0</p></div>
+                <div class="foulUpDown">
+                    <button id="foulUpH">&#9650</button>
+                    <button id="foulDownH">&#9660</button>
+                </div>
+            </div>
+        </div>
+      </div>
+      <div class="homeGuest">
+        <h3>GUEST</h3>
+        <div class="score">
+          <h4 id="guestNum">0</h4>
+        </div>
+        <div class="increments">
+          <button class="oneTwoThreeBtn" id="plusOneG">+1</button>
+          <button class="oneTwoThreeBtn" id="plusTwoG">+2</button>
+          <button class="oneTwoThreeBtn" id="plusThreeG">+3</button>
+        </div>
+        <h3 class="foul3">FOULS</h3>
+        <div class="fouls">
+            <div class="foulNum">
+                <div class="foulNumContainer"><p id="foulNumGuest">0</p></div>
+                <div class="foulUpDown">
+                    <button id="foulUpG">&#9650</button>
+                    <button id="foulDownG">&#9660</button>
+                </div>
+            </div>
+        </div>
+      </div></div>
+      <button id="reset"">RESET</button>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
